@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Musical Sorting Visualizer</title>
+</head>
+<body>
+    
+<h1>Musical Sorting Visualizer</h1>
+<canvas id="myCanvas"></canvas>
+
+<hr>
+
+<div>
+    <button onClick="init()">Init</button>
+    <button onClick="play()">Play</button>
+    <button onClick="pause()">Pause</button>
+    <button onClick="changeAlgorithm('bubbleSort')">Bubble Sort</button>
+    <button onClick="changeAlgorithm('quickSort')">Quick Sort</button>
+    <!-- <button onClick="changeAlgorithm('combSort')">Merge Sort</button> -->
+      <!-- Speed Control Slider -->
+       <hr>
+    <label for="speed-control">Speed:</label>
+    <input type="range" id="speed-control" min="1" max="100" value="100" step="1">
+</div>
+
+<hr>
+
+<!-- Algorithm Explanation Section -->
+<div id="algorithm-explanation-container">
+    <h2>Sorting Algorithm Explanation</h2>
+    <p id="algorithm-explanation"></p>
+</div>
+
+<script src="math.js"></script> 
+<script src="column.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
